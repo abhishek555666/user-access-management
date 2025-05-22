@@ -1,0 +1,16 @@
+# Dependency folders
+node_modules/
+dist/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# Build coverage
+coverage/
+
+# macOS and Windows junk
+.DS_Store
+Thumbs.db

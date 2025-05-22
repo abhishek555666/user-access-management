@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                    // modern JS target compatible with Node 14+
+    "module": "ESNext",                    // use ES modules (import/export)
+    "moduleResolution": "node",           
+
+    "strict": true,                        // strict type checking
+    "esModuleInterop": true,               // enable interop between CommonJS and ES Modules
+    "allowSyntheticDefaultImports": true, // allow default imports from modules with no default export
+
+    "experimentalDecorators": true,        // enable decorators (required by TypeORM)
+    "emitDecoratorMetadata": true,         // emit design-type metadata for decorators
+
+    "skipLibCheck": true,                   // skip checking types of declaration files for faster builds
+    "forceConsistentCasingInFileNames": true,
+
+    "outDir": "./dist",                     // compiled JS output folder
+    "rootDir": "./src",                     // source folder root
+
+    "baseUrl": "./src",                     // base URL for module resolution
+    "paths": {
+      "*": ["*"]                           // allow absolute import paths from src/
+    },
+
+    "resolveJsonModule": true,              // support importing JSON modules
+    "sourceMap": true,                      // enable source maps for debugging
+
+    "useUnknownInCatchVariables": false    // for better compatibility with older catch variable typing
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
